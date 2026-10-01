@@ -1,0 +1,21 @@
+{"id":"q01","question":"实验报告中的学生姓名是什么？","expected_source":"course.md","answerable":true}
+{"id":"q02","question":"学生的学号是多少？","expected_source":"course.md","answerable":true}
+{"id":"q03","question":"学生属于哪个班级？","expected_source":"course.md","answerable":true}
+{"id":"q04","question":"实验五的主题是什么？","expected_source":"course.md","answerable":true}
+{"id":"q05","question":"默认分块长度是多少？","expected_source":"course.md","answerable":true}
+{"id":"q06","question":"分块重叠长度是多少？","expected_source":"course.md","answerable":true}
+{"id":"q07","question":"默认检索返回几条证据？","expected_source":"course.md","answerable":true}
+{"id":"q08","question":"系统支持哪些文档格式？","expected_source":"architecture.md","answerable":true}
+{"id":"q09","question":"扫描版 PDF 如何处理？","expected_source":"architecture.md","answerable":true}
+{"id":"q10","question":"索引优先使用什么算法？","expected_source":"architecture.md","answerable":true}
+{"id":"q11","question":"FAISS 不可用时用什么后备？","expected_source":"architecture.md","answerable":true}
+{"id":"q12","question":"索引元数据保存在哪个文件？","expected_source":"architecture.md","answerable":true}
+{"id":"q13","question":"混合检索中向量相似度占比多少？","expected_source":"architecture.md","answerable":true}
+{"id":"q14","question":"上传文档是否可信？","expected_source":"security.txt","answerable":true}
+{"id":"q15","question":"系统会读取 GitHub 令牌回答问题吗？","expected_source":"security.txt","answerable":true}
+{"id":"q16","question":"系统默认运行地址是什么？","expected_source":"usage.txt","answerable":true}
+{"id":"q17","question":"北京明天的天气怎么样？","expected_source":null,"answerable":false}
+{"id":"q18","question":"莎士比亚出生于哪一年？","expected_source":null,"answerable":false}
+{"id":"q19","question":"如何制作番茄炒蛋？","expected_source":null,"answerable":false}
+{"id":"q20","question":"火星到地球有多远？","expected_source":null,"answerable":false}
+
