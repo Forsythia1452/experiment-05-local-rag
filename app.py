@@ -46,7 +46,7 @@ with st.sidebar:
     if st.button("使用示例知识库重建", use_container_width=True):
         count, _ = rebuild(list(KNOWLEDGE.glob("*")))
         st.success(f"示例库已建立：{count} 个文本块")
-    uploaded = [p.name for p in UPLOADS.glob("*") if p.is_file()]
+    uploaded = [p.name for p in UPLOADS.glob("*") if p.is_file() and p.name != ".gitkeep"]
     st.write("已上传：", "、".join(uploaded) if uploaded else "暂无")
     if st.button("清空上传文档", use_container_width=True):
         for p in UPLOADS.glob("*"):

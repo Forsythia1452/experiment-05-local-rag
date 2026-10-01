@@ -1,0 +1,356 @@
+{
+  "model_id": "char-tfidf-2-4-v1",
+  "chunk_count": 16,
+  "threshold": 0.16,
+  "question_count": 20,
+  "modes": {
+    "baseline": {
+      "recall@1": 0.9375,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "no_answer_false_positive_rate": 0.0,
+      "mean_latency_ms": 0.361
+    },
+    "hybrid": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "no_answer_false_positive_rate": 0.0,
+      "mean_latency_ms": 0.613
+    }
+  },
+  "details": [
+    {
+      "id": "q01",
+      "question": "实验报告中的学生姓名是什么？",
+      "expected": "course.md",
+      "top5": [
+        "course.md",
+        "security.txt",
+        "course.md",
+        "course.md",
+        "course.md"
+      ],
+      "top_score": 0.3767
+    },
+    {
+      "id": "q02",
+      "question": "学生的学号是多少？",
+      "expected": "course.md",
+      "top5": [
+        "course.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md"
+      ],
+      "top_score": 0.2233
+    },
+    {
+      "id": "q03",
+      "question": "学生属于哪个班级？",
+      "expected": "course.md",
+      "top5": [
+        "course.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md"
+      ],
+      "top_score": 0.1722
+    },
+    {
+      "id": "q04",
+      "question": "实验五的主题是什么？",
+      "expected": "course.md",
+      "top5": [
+        "course.md",
+        "course.md",
+        "course.md",
+        "course.md",
+        "architecture.md"
+      ],
+      "top_score": 0.4026
+    },
+    {
+      "id": "q05",
+      "question": "默认分块长度是多少？",
+      "expected": "course.md",
+      "top5": [
+        "course.md",
+        "architecture.md",
+        "course.md",
+        "usage.txt",
+        "architecture.md"
+      ],
+      "top_score": 0.3755
+    },
+    {
+      "id": "q06",
+      "question": "分块重叠长度是多少？",
+      "expected": "course.md",
+      "top5": [
+        "course.md",
+        "architecture.md",
+        "course.md",
+        "architecture.md",
+        "architecture.md"
+      ],
+      "top_score": 0.29
+    },
+    {
+      "id": "q07",
+      "question": "默认检索返回几条证据？",
+      "expected": "course.md",
+      "top5": [
+        "course.md",
+        "architecture.md",
+        "usage.txt",
+        "course.md",
+        "usage.txt"
+      ],
+      "top_score": 0.4216
+    },
+    {
+      "id": "q08",
+      "question": "系统支持哪些文档格式？",
+      "expected": "architecture.md",
+      "top5": [
+        "architecture.md",
+        "security.txt",
+        "course.md",
+        "security.txt",
+        "usage.txt"
+      ],
+      "top_score": 0.171
+    },
+    {
+      "id": "q09",
+      "question": "扫描版 PDF 如何处理？",
+      "expected": "architecture.md",
+      "top5": [
+        "architecture.md",
+        "usage.txt",
+        "architecture.md",
+        "security.txt",
+        "course.md"
+      ],
+      "top_score": 0.3453
+    },
+    {
+      "id": "q10",
+      "question": "索引优先使用什么算法？",
+      "expected": "architecture.md",
+      "top5": [
+        "architecture.md",
+        "usage.txt",
+        "usage.txt",
+        "security.txt",
+        "course.md"
+      ],
+      "top_score": 0.1655
+    },
+    {
+      "id": "q11",
+      "question": "FAISS 不可用时用什么后备？",
+      "expected": "architecture.md",
+      "top5": [
+        "architecture.md",
+        "usage.txt",
+        "security.txt",
+        "course.md",
+        "usage.txt"
+      ],
+      "top_score": 0.3827
+    },
+    {
+      "id": "q12",
+      "question": "索引元数据保存在哪个文件？",
+      "expected": "architecture.md",
+      "top5": [
+        "architecture.md",
+        "usage.txt",
+        "usage.txt",
+        "security.txt",
+        "security.txt"
+      ],
+      "top_score": 0.2635
+    },
+    {
+      "id": "q13",
+      "question": "混合检索中向量相似度占比多少？",
+      "expected": "architecture.md",
+      "top5": [
+        "architecture.md",
+        "course.md",
+        "architecture.md",
+        "architecture.md",
+        "security.txt"
+      ],
+      "top_score": 0.398
+    },
+    {
+      "id": "q14",
+      "question": "上传文档是否可信？",
+      "expected": "security.txt",
+      "top5": [
+        "security.txt",
+        "security.txt",
+        "architecture.md",
+        "usage.txt",
+        "course.md"
+      ],
+      "top_score": 0.2882
+    },
+    {
+      "id": "q15",
+      "question": "系统会读取 GitHub 令牌回答问题吗？",
+      "expected": "security.txt",
+      "top5": [
+        "security.txt",
+        "course.md",
+        "usage.txt",
+        "architecture.md",
+        "course.md"
+      ],
+      "top_score": 0.4637
+    },
+    {
+      "id": "q16",
+      "question": "系统默认运行地址是什么？",
+      "expected": "usage.txt",
+      "top5": [
+        "usage.txt",
+        "usage.txt",
+        "course.md",
+        "course.md",
+        "usage.txt"
+      ],
+      "top_score": 0.2141
+    },
+    {
+      "id": "q17",
+      "question": "北京明天的天气怎么样？",
+      "expected": null,
+      "top5": [
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "course.md"
+      ],
+      "top_score": 0.0
+    },
+    {
+      "id": "q18",
+      "question": "莎士比亚出生于哪一年？",
+      "expected": null,
+      "top5": [
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "course.md"
+      ],
+      "top_score": 0.0
+    },
+    {
+      "id": "q19",
+      "question": "如何制作番茄炒蛋？",
+      "expected": null,
+      "top5": [
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "course.md"
+      ],
+      "top_score": 0.0
+    },
+    {
+      "id": "q20",
+      "question": "火星到地球有多远？",
+      "expected": null,
+      "top5": [
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "architecture.md",
+        "course.md"
+      ],
+      "top_score": 0.0
+    }
+  ],
+  "groundedness_reviews": [
+    {
+      "id": "q01",
+      "answer": "根据知识库：实验报告中的学生为侯宇晴，学号 23120506154，班级软件2304。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q02",
+      "answer": "根据知识库：实验报告中的学生为侯宇晴，学号 23120506154，班级软件2304。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q03",
+      "answer": "根据知识库：实验报告中的学生为侯宇晴，学号 23120506154，班级软件2304。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q04",
+      "answer": "根据知识库：实验五的主题是基于开源技术构建本地知识问答系统。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q05",
+      "answer": "根据知识库：实验五的默认分块长度为 400 个字符，重叠长度为 80 个字符。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q06",
+      "answer": "根据知识库：实验五的默认分块长度为 400 个字符，重叠长度为 80 个字符。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q07",
+      "answer": "根据知识库：默认检索返回 3 条证据，拒答阈值为 0.16。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q08",
+      "answer": "根据知识库：系统由文档层、索引层、检索层、回答层和界面层组成。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q09",
+      "answer": "根据知识库：扫描版 PDF 无文本时会明确提示需要 OCR。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    },
+    {
+      "id": "q10",
+      "answer": "根据知识库：索引层使用字符二至四元组 TF-IDF 生成本地向量，并归一化为单位长度。 [S1]",
+      "citation_present": true,
+      "supported": true,
+      "reason": "答案摘自首条原文并带来源标记"
+    }
+  ]
+}

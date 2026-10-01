@@ -4,7 +4,11 @@ import re
 
 
 def terms(text: str):
-    return set(re.findall(r"[\u4e00-\u9fff]{2,}|[a-zA-Z0-9_.-]+", text.lower()))
+    text = text.lower()
+    words = set(re.findall(r"[a-zA-Z0-9_.-]+", text))
+    chinese = "".join(re.findall(r"[\u4e00-\u9fff]", text))
+    words.update(chinese[i:i + 2] for i in range(max(0, len(chinese) - 1)))
+    return words
 
 
 def hybrid_search(index, query: str, k: int = 5, candidate_k: int = 12, alpha: float = 0.72):
