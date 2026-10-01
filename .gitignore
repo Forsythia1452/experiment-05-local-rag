@@ -6,4 +6,5 @@ data/index/*
 data/uploads/*
 !data/uploads/.gitkeep
 .streamlit/secrets.toml
+.streamlit.pid
 
